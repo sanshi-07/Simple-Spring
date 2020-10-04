@@ -1,0 +1,13 @@
+<beans>
+
+    <bean id="discus" class="ioc.Discus">
+        <property name="weight" value="10"></property>
+    </bean>
+
+    <bean id="dumbbell" class="ioc.Dumbbell">
+        <property name="dumbbell_id" value="0001"></property>
+        <property name="brand" value="nike"></property>
+        <property name="discus" ref="discus"></property>
+    </bean>
+
+</beans>
