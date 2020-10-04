@@ -43,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled/asm-7.1.jar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,8 +51,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -60,7 +60,20 @@
       <recent name="C:\Users\XIAOLEI07\Desktop\simple-spring\simplr-spring-v1.0.0\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SimpleCGLibDemo">
+    <configuration name="SimpleCGLibDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dynamicproxy.SimpleCGLibDemo" />
+      <module name="simplr-spring-v1.0.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dynamicproxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SimpleJDKDynamicProxyDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dynamicproxy.SimpleJDKDynamicProxyDemo" />
       <module name="simplr-spring-v1.0.0" />
@@ -87,6 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimpleCGLibDemo" />
         <item itemvalue="Application.SimpleJDKDynamicProxyDemo" />
       </list>
     </recent_temporary>
@@ -99,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601815331348</updated>
-      <workItem from="1601815332606" duration="2523000" />
+      <workItem from="1601815332606" duration="5297000" />
     </task>
     <task id="LOCAL-00001" summary="10.04">
       <created>1601816018404</created>
@@ -108,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601816018404</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="10.04">
+      <created>1601817933577</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601817933577</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,10 +151,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="10.04" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="395" y="153" key="FileChooserDialogImpl" timestamp="1601816313793">
+    <state x="395" y="153" key="FileChooserDialogImpl" timestamp="1601820023748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="395" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601816313793" />
+    <state x="395" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601820023748" />
     <state x="631" y="320" width="281" height="280" key="Github.ShareDialog" timestamp="1601816541959">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -142,30 +163,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="492" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601816562343" />
-    <state width="1478" height="244" key="GridCell.Tab.0.bottom" timestamp="1601817648050">
+    <state width="833" height="319" key="GridCell.Tab.0.bottom" timestamp="1601820337313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="244" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601817648050" />
-    <state width="1478" height="244" key="GridCell.Tab.0.center" timestamp="1601817648050">
+    <state width="833" height="319" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601820337313" />
+    <state width="833" height="319" key="GridCell.Tab.0.center" timestamp="1601820337312">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="244" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601817648050" />
-    <state width="1478" height="244" key="GridCell.Tab.0.left" timestamp="1601817648050">
+    <state width="833" height="319" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601820337312" />
+    <state width="833" height="319" key="GridCell.Tab.0.left" timestamp="1601820337312">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="244" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601817648050" />
-    <state width="1478" height="244" key="GridCell.Tab.0.right" timestamp="1601817648050">
+    <state width="833" height="319" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601820337312" />
+    <state width="833" height="319" key="GridCell.Tab.0.right" timestamp="1601820337313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="244" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601817648050" />
-    <state x="199" y="0" key="SettingsEditor" timestamp="1601816534990">
+    <state width="833" height="319" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601820337313" />
+    <state x="199" y="0" key="SettingsEditor" timestamp="1601820028585">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="199" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601816534990" />
-    <state x="365" y="156" key="Vcs.Push.Dialog.v2" timestamp="1601816330688">
+    <state x="199" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601820028585" />
+    <state x="365" y="156" key="Vcs.Push.Dialog.v2" timestamp="1601817939188">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="365" y="156" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601816330688" />
+    <state x="365" y="156" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601817939188" />
     <state x="178" y="117" key="new project wizard" timestamp="1601815366993">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

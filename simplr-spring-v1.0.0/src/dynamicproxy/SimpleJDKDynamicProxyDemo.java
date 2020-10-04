@@ -50,7 +50,7 @@ public class SimpleJDKDynamicProxyDemo {
         }
     }
 
-    //这里是获取我们的动态代理商店的
+    //这里是获取我们的动态代理某件商品的商店
     private static <T> T getProxy(Class<T> intf, T realObj) {
         return (T) Proxy.newProxyInstance(intf.getClassLoader(),
                 new Class<?>[] { intf }, new SimpleInvocationHandler(realObj));
@@ -58,9 +58,11 @@ public class SimpleJDKDynamicProxyDemo {
 
     public static void main(String[] args) throws Exception {
         FactoryA a = new FactoryAImpl();
+        //我们想要购买FactoryA生产的produce
         FactoryA aProxy = getProxy(FactoryA.class, a);
         aProxy.produceA();
         FactoryB b = new FactoryBImpl();
+        //我们想要购买FactoryB生产的produce
         FactoryB bProxy = getProxy(FactoryB.class, b);
         bProxy.produceB();
     }
