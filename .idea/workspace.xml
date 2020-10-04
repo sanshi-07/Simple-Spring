@@ -13,7 +13,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efb5f76c-981b-4db1-806f-eadcda2e1dad" name="Default Changelist" comment="10.04" />
+    <list default="true" id="efb5f76c-981b-4db1-806f-eadcda2e1dad" name="Default Changelist" comment="10.04">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simplr-spring-v1.0.0/src/dynamicproxy/SimpleJDKDynamicProxyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/simplr-spring-v1.0.0/src/dynamicproxy/SimpleJDKDynamicProxyDemo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +44,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -52,6 +61,19 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="SimpleJDKDynamicProxyDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dynamicproxy.SimpleJDKDynamicProxyDemo" />
+      <module name="simplr-spring-v1.0.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dynamicproxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -63,6 +85,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SimpleJDKDynamicProxyDemo" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -72,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601815331348</updated>
-      <workItem from="1601815332606" duration="1185000" />
+      <workItem from="1601815332606" duration="2523000" />
     </task>
     <task id="LOCAL-00001" summary="10.04">
       <created>1601816018404</created>
@@ -107,10 +134,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="395" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601816313793" />
-    <state x="631" y="320" width="281" height="280" key="Github.ShareDialog" timestamp="1601816376594">
+    <state x="631" y="320" width="281" height="280" key="Github.ShareDialog" timestamp="1601816541959">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="631" y="320" width="281" height="280" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1601816376594" />
+    <state x="631" y="320" width="281" height="280" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1601816541959" />
+    <state x="492" y="117" key="Github.UntrackedFilesDialog" timestamp="1601816562343">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="492" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601816562343" />
+    <state width="1478" height="244" key="GridCell.Tab.0.bottom" timestamp="1601817648050">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="244" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601817648050" />
+    <state width="1478" height="244" key="GridCell.Tab.0.center" timestamp="1601817648050">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="244" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601817648050" />
+    <state width="1478" height="244" key="GridCell.Tab.0.left" timestamp="1601817648050">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="244" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601817648050" />
+    <state width="1478" height="244" key="GridCell.Tab.0.right" timestamp="1601817648050">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="244" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601817648050" />
     <state x="199" y="0" key="SettingsEditor" timestamp="1601816534990">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

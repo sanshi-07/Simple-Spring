@@ -1,69 +1,36 @@
 package dynamicproxy;
 
 /*
-  I's a simple JDKProxy
+ * I's a simple JDKProxy
+ * @author:he sanshi
  */
-import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 public class SimpleJDKDynamicProxyDemo {
-    static interface IService {
-        public void sayHello();
+    //A工厂完成对A商品的实际生产
+    static interface FactoryA {
+        public void produceA();
     }
-    static class RealService implements IService {
+    //B工厂完成对B商品的实际生产
+    static class FactoryAImpl implements FactoryA  {
         @Override
-        public void sayHello() {
-            System.out.println("hello");
+        public void produceA() {
+            System.out.println("工厂A完成了对商品A的生产、装配、运输");
         }
     }
-    static class SimpleInvocationHandler implements InvocationHandler {
-        private Object realObj;
-        public SimpleInvocationHandler(Object realObj) {
-            this.realObj = realObj;
-        }
-        @Override
-        public Object invoke(Object proxy, Method method,
-                             Object[] args) throws Throwable {
-            System.out.println("entering " + method.getName());
-            Object result = method.invoke(realObj, args);
-            System.out.println("leaving " + method.getName());
-            return result;
-        }
 
+    static interface FactoryB {
+        public void produceB();
     }
-    public static void main(String[] args) {
-        IService realService = new RealService();
-        IService proxyService = (IService) Proxy.newProxyInstance(
-                IService.class.getClassLoader(), new Class<?>[] { IService.class },
-                new SimpleInvocationHandler(realService));
-        proxyService.sayHello();
-    }
-}
 
-/*
- * 对上面的包装
- */
- class GeneralProxyDemo {
-    static interface IServiceA {
-        public void sayHello();
-    }
-    static class ServiceAImpl implements IServiceA {
+    static class FactoryBImpl implements FactoryB  {
         @Override
-        public void sayHello() {
-            System.out.println("hello");
-        }
+        public void produceB() { System.out.println("工厂B完成了对商品B的生产、装配、运输"); }
     }
-    static interface IServiceB {
-        public void fly();
-    }
-    static class ServiceBImpl implements IServiceB {
-        @Override
-        public void fly() {
-            System.out.println("flying");
-        }
-    }
+
+    //看起来这里将充当我们的代理商店
     static class SimpleInvocationHandler implements InvocationHandler {
         private Object realObj;
         public SimpleInvocationHandler(Object realObj) {
@@ -72,24 +39,29 @@ public class SimpleJDKDynamicProxyDemo {
         @Override
         public Object invoke(Object proxy, Method method, Object[] args)
                 throws Throwable {
-            System.out.println("entering " + realObj.getClass()
+            System.out.println("您选购了"+ method.getName()+"商品");
+            System.out.println("进入 " + realObj.getClass()
                     .getSimpleName() + "::" + method.getName());
             Object result = method.invoke(realObj, args);
-            System.out.println("leaving " + realObj.getClass()
+            System.out.println("完成 " + realObj.getClass()
                     .getSimpleName() + "::" + method.getName());
+            System.out.println("您完成了"+ method.getName()+"商品的购买");
             return result;
         }
     }
+
+    //这里是获取我们的动态代理商店的
     private static <T> T getProxy(Class<T> intf, T realObj) {
         return (T) Proxy.newProxyInstance(intf.getClassLoader(),
                 new Class<?>[] { intf }, new SimpleInvocationHandler(realObj));
     }
+
     public static void main(String[] args) throws Exception {
-        IServiceA a = new ServiceAImpl();
-        IServiceA aProxy = getProxy(IServiceA.class, a);
-        aProxy.sayHello();
-        IServiceB b = new ServiceBImpl();
-        IServiceB bProxy = getProxy(IServiceB.class, b);
-        bProxy.fly();
+        FactoryA a = new FactoryAImpl();
+        FactoryA aProxy = getProxy(FactoryA.class, a);
+        aProxy.produceA();
+        FactoryB b = new FactoryBImpl();
+        FactoryB bProxy = getProxy(FactoryB.class, b);
+        bProxy.produceB();
     }
 }
